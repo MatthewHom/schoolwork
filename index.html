@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Module 5 Project</title>
+
+  <link rel="stylesheet" href="themes/projectthemes.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- Home Page-->
+  <div id="home" data-role="page">
+
+<!--Navigation Panel -->
+    <div data-role="panel" id="myPanel">
+  		<h2>Menu</h2>
+  		<ul data-role="listview" data-theme="c">
+        <li class="menu"><a href="#home">Home</a></li>
+  			<li class="menu"><a href="#bands">Favorite Bands</a></li>
+  			<li class="menu"><a href="#books">Favorite Books</a></li>
+  			<li class="menu"><a href="#beers">Favorite Breweries</a></li>
+  			<li class="menu"><a href="#yours">Your Favorites</a></li>
+  		</ul>
+  		<p>Swipe, or click outside of menu to close</p>
+  	</div>
+
+    <div data-role="header">
+
+        <h2>Matt's Favorite Things</h2>
+
+    </div>
+
+
+
+    <div data-role="header">
+      <h1>Welcome to My Favorite Things Page!</h1>
+  		<a href="#myPanel" class="ui-btn ui-btn-inline">Go To..</a>
+    </div>
+
+    <div data-role="content">
+      <fieldset class="ui-grid-c">
+        <div class="ui-block-a"><a href="#bands"><input type="button" value="Favorite Bands"></a></div>
+        <div class="ui-block-b"><a href="#books"><input type="button" value="Favorite Books"></a></div>
+        <div class="ui-block-c"><a href="#beers"><input type="button" value="Favorite Breweries"></a></div>
+        <div class="ui-block-d"><a href="#yours"><input type="button" value="Your Favorites"></a></div>
+      </fieldset>
+    </div>
+
+    <div data-role="footer">
+      <h3>Favorites &copy; 2017</h3>
+    </div>
+  </div>
+  <!--End Home Page-->
+
+
+  <!--Favorite Bands Page: -->
+  <div data-role="page" id="bands" class="ui-content">
+
+<!--Navigation Panel -->
+    <div data-role="panel" id="myPanel">
+      <h2>Menu</h2>
+      <ul data-role="listview" data-theme="c">
+        <li class="menu"><a href="#home">Home</a></li>
+        <li class="menu"><a href="#bands">Favorite Bands</a></li>
+        <li class="menu"><a href="#books">Favorite Books</a></li>
+        <li class="menu"><a href="#beers">Favorite Breweries</a></li>
+        <li class="menu"><a href="#yours">Your Favorites</a></li>
+      </ul>
+      <p>Swipe, or click outside of menu to close</p>
+    </div>
+
+    <div data-role="header">
+      <h1>Favorite Bands!</h1>
+      <a href="#myPanel" class="ui-btn ui-btn-inline">Go To..</a>
+    </div>
+
+    <div data-role="content">
+      <ul data-role="listview" data-filter="true">
+        <li><a href="http://flaminglips.warnerbrosrecords.com/OczyMlody/" class="ui-btn ui-icon-plus ui-btn-icon-left">The Flaming Lips</a></li>
+        <li><a href="http://boniver.org/" class="ui-btn ui-icon-plus ui-btn-icon-left">Bon Iver</a></li>
+        <li><a href="http://americanmary.com/" class="ui-btn ui-icon-plus ui-btn-icon-left">The National</a></li>
+        <li><a href="http://modestmouse.com/" class="ui-btn ui-icon-plus ui-btn-icon-left">Modest Mouse</a></li>
+        <li><a href="http://www.craigfinn.net/" class="ui-btn ui-icon-plus ui-btn-icon-left">Craig Finn</a></li>
+      </ul>
+    </div>
+
+    <div data-role="footer">
+      <h3>My Favorite Things Page! &copy; 2017</h3>
+    </div>
+  </div>
+  <!--End Favorite Bands-->
+
+
+  <!--Favorite Books Page: -->
+  <div data-role="page" id="books" class="ui-content">
+
+    <!--Navigation Panel -->
+        <div data-role="panel" id="myPanel">
+          <h2>Menu</h2>
+          <ul data-role="listview" data-theme="c">
+            <li class="menu"><a href="#home">Home</a></li>
+            <li class="menu"><a href="#bands">Favorite Bands</a></li>
+            <li class="menu"><a href="#books">Favorite Books</a></li>
+            <li class="menu"><a href="#beers">Favorite Breweries</a></li>
+            <li class="menu"><a href="#yours">Your Favorites</a></li>
+          </ul>
+          <p>Swipe, or click outside of menu to close</p>
+        </div>
+
+    <div data-role="header">
+      <h1>Favorite Books!</h1>
+      <a href="#myPanel" class="ui-btn ui-btn-inline">Go To..</a>
+    </div>
+
+    <div data-role="content">
+      <ul data-role="listview" data-filter="true">
+        <li><a href="https://www.amazon.com/Silent-Planet-Space-Trilogy-Paperback/dp/0743234901/ref=sr_1_1?ie=UTF8&qid=1484880636&sr=8-1&keywords=Out+of+the+Silent+Planet" class="ui-btn ui-icon-plus ui-btn-icon-left">"Out of the Silent Planet" - C.S. Lewis</a></li>
+        <li><a href="https://www.amazon.com/American-Gods-Tenth-Anniversary-Novel/dp/0062472100/ref=sr_1_1?ie=UTF8&qid=1484880702&sr=8-1&keywords=American+Gods" class="ui-btn ui-icon-plus ui-btn-icon-left">"American Gods" - Neil Gaiman</a></li>
+        <li><a href="https://www.amazon.com/Lord-Flies-William-Golding/dp/0399501487/ref=sr_1_1?ie=UTF8&qid=1484880815&sr=8-1&keywords=Lord+of+the+Flies" class="ui-btn ui-icon-plus ui-btn-icon-left">"Lord of the Flies" - William Golding</a></li>
+        <li><a href="https://www.amazon.com/Wrinkle-Time-Quintet/dp/0312367546/ref=sr_1_1?ie=UTF8&qid=1484881076&sr=8-1&keywords=a+wrinkle+in+time" class="ui-btn ui-icon-plus ui-btn-icon-left">"A Wrinkle In Time" - Madeleine L'Engle</a></li>
+        <li><a href="https://www.amazon.com/Giver-Quartet-Lois-Lowry/dp/0544336267/ref=sr_1_1?ie=UTF8&qid=1484881161&sr=8-1&keywords=The+Giver" class="ui-btn ui-icon-plus ui-btn-icon-left">"The Giver" - Lois Lowry</a></li>
+      </ul>
+    </div>
+
+    <div data-role="footer">
+      <h3>My Favorite Things Page! &copy; 2017</h3>
+    </div>
+  </div>
+  <!--End Favorite Books Page: -->
+
+
+  <!--Favorite Breweries Page: -->
+  <div data-role="page" id="beers" class="ui-content">
+
+    <!--Navigation Panel -->
+        <div data-role="panel" id="myPanel">
+          <h2>Menu</h2>
+          <ul data-role="listview" data-theme="c">
+            <li class="menu"><a href="#home">Home</a></li>
+            <li class="menu"><a href="#bands">Favorite Bands</a></li>
+            <li class="menu"><a href="#books">Favorite Books</a></li>
+            <li class="menu"><a href="#beers">Favorite Breweries</a></li>
+            <li class="menu"><a href="#yours">Your Favorites</a></li>
+          </ul>
+          <p>Swipe, or click outside of menu to close</p>
+        </div>
+
+    <div data-role="header">
+      <h1>Favorite Breweries!</h1>
+      <a href="#myPanel" class="ui-btn ui-btn-inline">Go To..</a>
+    </div>
+
+    <div data-role="content">
+      <ul data-role="listview" data-filter="true">
+        <li><a href="https://www.oskarblues.com/" class="ui-btn ui-icon-plus ui-btn-icon-left">Oscar Blues Brewery</a></li>
+        <li><a href="https://www.deschutesbrewery.com/" class="ui-btn ui-icon-plus ui-btn-icon-left">Deschutes Brewery</a></li>
+        <li><a href="https://www.bellsbeer.com/" class="ui-btn ui-icon-plus ui-btn-icon-left">Bell's Brewery</a></li>
+        <li><a href="http://www.lupulinbrewing.com/" class="ui-btn ui-icon-plus ui-btn-icon-left">Lupulin Brewing</a></li>
+        <li><a href="https://www.junkyardbeer.com/" class="ui-btn ui-icon-plus ui-btn-icon-left">Junkyard Brewing Company</a></li>
+      </ul>
+    </div>
+
+    <div data-role="footer">
+      <h3>My Favorite Things Page! &copy; 2017</h3>
+    </div>
+  </div>
+  <!--End Favorite Breweries Page: -->
+
+
+  <!-- About You Page -->
+  <div data-role="page" id="yours" class="ui-content">
+
+    <!--Navigation Panel -->
+        <div data-role="panel" id="myPanel">
+          <h2>Menu</h2>
+          <ul data-role="listview" data-theme="c">
+            <li class="menu"><a href="#home">Home</a></li>
+            <li class="menu"><a href="#bands">Favorite Bands</a></li>
+            <li class="menu"><a href="#books">Favorite Books</a></li>
+            <li class="menu"><a href="#beers">Favorite Breweries</a></li>
+            <li class="menu"><a href="#yours">Your Favorites</a></li>
+          </ul>
+          <p>Swipe, or click outside of menu to close</p>
+        </div>
+
+    <div data-role="header">
+      <h1>What Are Your Favorites?</h1>
+      <a href="#myPanel" class="ui-btn ui-btn-inline">Go To..</a>
+    </div>
+
+    <div data-role="content">
+
+      <h2>Here are a list of my top favorites</h2>
+      <h3>My favorite band is:</h3>
+        <div id="band"></div>
+      <h3>My favorite book is:</h3>
+        <div id="book"></div>
+      <h3>My favorite brewery is:</h3>
+        <div id="brewery"></div>
+
+      <h3>Enter YOUR favorites band, book, and brewery below!</3>
+
+      <textarea class="localstorage" placeholder="Your Favorites..."></textarea>
+
+
+
+      <button class="clear">Clear localStorage</button>
+
+      <button class="empty">Empty localStorage</button>
+
+
+    </div>
+
+
+
+  <!-- End About You Page -->
+</body>
+
+
+<!-- Script for top favorites from web storage -->
+<script>
+localStorage.setItem("band", "Edward Sharpe and the Magnetic Zeros")
+document.getElementById("band").innerHTML = localStorage.getItem("band");
+
+localStorage.setItem("book", "The Giver - by Lois Lowry")
+document.getElementById("book").innerHTML = localStorage.getItem("book")
+
+localStorage.setItem("brewery", "Deschutes Brewing")
+document.getElementById("brewery").innerHTML = localStorage.getItem("brewery")
+</script>
+
+
+<script>
+(function() {
+  var rasm = document.querySelector('.localstorage');
+  //Calls variable rasm
+
+  function supportsLocalStorage() {
+    return typeof(Storage)!== 'undefined';
+  } //Function to determin if browser supports local storage
+
+  if (!supportsLocalStorage()) {
+    rasm.value = 'Your browser does not support localStorage.'; // Tells you browser does not support local storage
+  } else {
+    try {
+      setInterval(function() {
+        localStorage.setItem('autosave', rasm.value); //if browser supports local storage, autosaves item to local storage
+      }, 1000);
+    } catch (e) {
+      if (e == QUOTA_EXCEEDED_ERR) {
+        alert('Quota exceeded!');
+      } // Sets quota of 1000 charaters, alerts if quota has been exceeded
+    }
+    if (localStorage.getItem('autosave')) {
+      rasm.value = localStorage.getItem('autosave');
+    } // instructs to get the item that was saved in local storage
+    document.querySelector('.clear').onclick = function() {
+      rasm.value = '';
+      localStorage.removeItem('autosave');
+    }; //tells item to be removed from local storage
+    document.querySelector('.empty').onclick = function() {
+      rasm.value = '';
+      localStorage.clear();
+    }; // Clears local storage completely
+  }
+
+})();
+</script>
